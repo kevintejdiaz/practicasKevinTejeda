@@ -1,0 +1,54 @@
+/* Estilos para el header */
+.header {
+    background-color: rgb(250, 235, 215);
+    height: 12vb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    background-color: #f0e68c;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e0c65c;
+}
+
+.main {
+    display: flex;
+    justify-content: center; /* Centrado verticalmente */
+    align-items: center; /* Centrado horizontalmente */
+    padding: 20px;
+}
+
+.proyectos {
+    text-align: center;
+    width: 50%; /* Ancho del bloque de cada proyecto */
+    margin-bottom: 20px; /* Espacio entre proyectos */
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.proyecto p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer{
+    background-color: rgb(250, 235, 215);
+    height: 17vb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

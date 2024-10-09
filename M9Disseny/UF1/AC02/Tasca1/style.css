@@ -1,0 +1,61 @@
+.contenedorA {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.red1 {
+    background-color: #ff4d4d;
+    height: 100px; 
+    width: 80%;
+    display: inline-block; 
+    margin-right: 10px;
+}
+
+.red2 {
+    background-color: #ff4d4d;
+    height: 100px; 
+    width: 18%;
+    display: inline-block; 
+}
+
+.contenedorB {
+    width: 100%;
+    display: flex; 
+}
+
+.amarillo {
+    background-color: #ffb84d;
+    width: 30%;
+    height: 460px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.contenedor-lilas {
+    width: 35%; 
+    vertical-align: top; 
+}
+
+.lila1, .lila2 {
+    background-color: #990099;
+    width: 195%;
+    height: 229px;
+    display: block; 
+    margin-bottom: 5px;
+}
+
+.contenedorC {
+    width: 100%; /* Aseguramos que ocupe el ancho completo */
+    height: 150px; /* Definimos una altura que permita que los elementos se alineen abajo */
+}
+
+.azul {
+    background-color: #008080;
+    display: inline-block;
+    width: 32.5%; 
+    height: 100px;
+    margin: 0 4px;
+    margin-top: 10px;
+}
