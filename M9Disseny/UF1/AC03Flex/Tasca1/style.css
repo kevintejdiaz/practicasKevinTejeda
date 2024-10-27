@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 0;
+}
+
+.containerNoWrap, .containerWrap {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.containerNoWrap {
+    flex-wrap: nowrap;
+    white-space: nowrap; 
+    width: 100%; 
+}
+
+.containerWrap {
+    flex-wrap: wrap;
+    width: 100%; 
+}
+
+.containerNoWrap div, .containerWrap div {
+    border: 1px dotted gray;
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerNoWrap img, .containerWrap img {
+    width: 200px; 
+    height: 200px; 
+}
