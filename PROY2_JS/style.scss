@@ -1,0 +1,93 @@
+// Variables de color y fuentes
+$primary-color: lime;
+$secondary-color: rgba(133, 69, 116, 0.832);
+$background-color: black;
+$font-family: 'Arial', sans-serif;
+
+// Mixins para facilitar la reutilización de estilos
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-styles($bg-color, $hover-color) {
+  padding: 10px 40px;
+  font-size: 24px;
+  color: white;
+  background-color: $bg-color;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+// Estilo global para el body
+body {
+  overflow: hidden;
+  font-family: $font-family;
+  margin: 0;
+}
+
+// Estilos para el canvas
+#board {
+  background-color: $background-color;
+}
+
+// Overlay que cubre toda la pantalla
+#overlay {
+  @include center-flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('resources/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+// Título centrado
+h1 {
+  margin-top: 30px;
+  color: $secondary-color;
+  font-size: 5vw;
+}
+
+// Estilos para el botón Jugar
+#botonJugar {
+  margin-top: 15%;
+  @include button-styles($primary-color, limegreen);
+}
+
+// Estilos para pantallas pequeñas
+@media (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  #botonJugar {
+    font-size: 18px;
+    padding: 8px 30px;
+  }
+}
+
+// Estilos para pantallas medianas
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 6vw;
+  }
+
+  #botonJugar {
+    font-size: 20px;
+  }
+}
