@@ -1,0 +1,14 @@
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\bin\Debug\net8.0\AC1.exe
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\bin\Debug\net8.0\AC1.deps.json
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\bin\Debug\net8.0\AC1.runtimeconfig.json
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\bin\Debug\net8.0\AC1.dll
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\bin\Debug\net8.0\AC1.pdb
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\AC1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\AC1.AssemblyInfoInputs.cache
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\AC1.AssemblyInfo.cs
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\AC1.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\AC1.dll
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\refint\AC1.dll
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\AC1.pdb
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\AC1.genruntimeconfig.cache
+C:\Users\kevin\Desktop\DAW\2º\M3.Programació\UF5\AC1\obj\Debug\net8.0\ref\AC1.dll
