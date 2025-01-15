@@ -21,7 +21,7 @@ let alienX = tileSize;
 let alienY = tileSize;
 let alienImg;
 let alienVelocityX = 1;             
-let alienSpeedIncrement = 0.2;      
+let alienSpeedIncrement = 0.4;      
 let alienInitialVelocityX = 1;     
 
 let alienRows = 2;
