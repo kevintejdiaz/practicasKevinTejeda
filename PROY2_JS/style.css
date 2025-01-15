@@ -1,11 +1,39 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Establece la altura del body al 100% de la altura de la ventana del navegador */
+  margin: 0;
   overflow: hidden;
   font-family: "Arial", sans-serif;
-  margin: 0;
+  background-color: rgb(255, 255, 255); /* Asume que el fondo debe ser negro */
+}
+
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#score-panel {
+  position: absolute;
+  top: 20px;
+  left: 50%; /* Centrar el score horizontalmente */
+  transform: translateX(-50%);
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  z-index: 11;
+}
+
+#restartButton {
+  display: none;
 }
 
 #board {
   background-color: black;
+  display: block; /* Esto asegura que el canvas se maneje como un bloque sin márgenes adicionales */
+  margin: 0 auto;
 }
 
 #overlay {

@@ -6,13 +6,19 @@
     <title>Space Invader</title>
     <link href="style.css" rel="stylesheet">
 </head>
-<div id="overlay">
-    <h1>Space Invaders</h1>
-    <button id="botonJugar">Jugar</button>
-</div>
 <body>
-    <canvas id="board"></canvas>
-    
+    <div id="overlay">
+        <h1>Space Invaders</h1>
+        <button id="botonJugar">Jugar</button>
+    </div>
+    <div id="game-container">
+        <div id="score-panel">
+            Score: <span id="score">0</span>
+            <br>
+            <button id="restartButton">Reiniciar Juego</button>
+        </div>
+        <canvas id="board"></canvas>
+    </div>       
     <script src="spaceInv.js"></script>
 </body>
 </html>
