@@ -65,7 +65,7 @@ h1 {
 
 // Estilos para el botón Jugar
 #botonJugar {
-  margin-top: 15%;
+  // margin-top: 13%;
   @include button-styles($primary-color, limegreen);
 }
 

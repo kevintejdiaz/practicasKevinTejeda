@@ -3,14 +3,14 @@ let rows = 16;
 let columns = 16;
 
 let board;
-let boardWidth = tileSize * columns;
-let boardHeight = tileSize * rows;
+const boardWidth = 1500;
+const boardHeight = 700;
 let context;
 
 let shipWidth = tileSize;
 let shipHeight = tileSize * 2;
-let shipX = tileSize * columns / 2 - tileSize;
-let shipY = tileSize * rows - tileSize * 2;
+let shipX = (boardWidth - shipWidth) / 2;
+let shipY = boardHeight - tileSize * 2;
 let shipImg;
 let shipVelocityX = tileSize;
 
@@ -20,12 +20,12 @@ let alienHeight = tileSize;
 let alienX = tileSize;
 let alienY = tileSize;
 let alienImg;
-let alienVelocityX = 1;             
-let alienSpeedIncrement = 0.4;      
-let alienInitialVelocityX = 1;     
+let alienVelocityX = 1;
+let alienSpeedIncrement = 1.0;
+let alienInitialVelocityX = 1;
 
-let alienRows = 2;
-let alienColumns = 3;
+let alienRows = 5;
+let alienColumns = 10;
 let alienCount = 0;
 
 let bulletArray = [];
@@ -49,22 +49,19 @@ youWinImg.src = "resources/winner.png";
 let gameActive = true;
 let animationId;
 
+let startTime;
+let elapsedTime = 0;
+let timerElement = document.createElement('span');
+document.getElementById('score-panel').appendChild(document.createElement('br'));
+document.getElementById('score-panel').appendChild(document.createTextNode("Tiempo: "));
+document.getElementById('score-panel').appendChild(timerElement);
+
 window.onload = () => {
     board = document.getElementById('board');
     board.width = boardWidth;
     board.height = boardHeight;
 
     context = board.getContext('2d');
-
-    shipImg = new Image();
-    shipImg.src = "resources/nave.png";
-    shipImg.onload = () => {
-        context.drawImage(shipImg, ship.x, ship.y, ship.width, ship.height);
-    };
-
-    alienImg = new Image();
-    alienImg.src = "resources/enemigo.png";
-    createAliens();
 
     document.addEventListener("keydown", moveShip);
     document.addEventListener("keyup", shoot);
@@ -77,6 +74,33 @@ window.onload = () => {
 
     document.getElementById('restartButton').addEventListener('click', resetGame);
 };
+
+async function loadImage(src) {
+    return new Promise((resolve, reject) => {
+        let img = new Image();
+        img.src = src;
+        img.onload = () => resolve(img);
+        img.onerror = (error) => reject(error);
+    });
+}
+
+async function startGame() {
+    gameActive = true;
+    score = 0;
+    document.getElementById('score').innerText = score;
+    startTime = Date.now();
+    elapsedTime = 0;
+    timerElement.innerText = "0.00 segundos";
+    alienVelocityX = alienInitialVelocityX;
+    createAliens();
+    bulletArray = [];
+
+    shipImg = await loadImage("resources/nave.png");
+    alienImg = await loadImage("resources/enemigo.png");
+
+    attachControls();
+    update();
+}
 
 function update() {
     if (!gameActive) return;
@@ -93,8 +117,8 @@ function update() {
             alien.x += alienVelocityX;
 
             if (alien.x + alien.width >= boardWidth || alien.x <= 0) {
-                alienVelocityX *= -1;  
-                alienVelocityX += (alienVelocityX > 0 ? alienSpeedIncrement : -alienSpeedIncrement);  
+                alienVelocityX *= -1;
+                alienVelocityX += (alienVelocityX > 0 ? alienSpeedIncrement : -alienSpeedIncrement);
 
                 alienArray.forEach(a => {
                     a.y += alienHeight;
@@ -135,6 +159,9 @@ function update() {
         drawCenteredImage(youWinImg, 300, 150);
         cancelAnimationFrame(animationId);
         disableControls();
+        stopTimer();
+    } else {
+        updateTimer();
     }
 }
 
@@ -184,15 +211,14 @@ function detectCollision(a, b) {
            a.y + a.height > b.y;
 }
 
-function startGame() {
-    gameActive = true;
-    score = 0;
-    document.getElementById('score').innerText = score;
-    alienVelocityX = alienInitialVelocityX;  
-    createAliens();
-    bulletArray = [];
-    attachControls();
-    update();
+function stopTimer() {
+    elapsedTime = (Date.now() - startTime) / 1000;
+    timerElement.innerText = elapsedTime.toFixed(2) + " segundos";
+}
+
+function updateTimer() {
+    elapsedTime = (Date.now() - startTime) / 1000;
+    timerElement.innerText = elapsedTime.toFixed(2) + " segundos";
 }
 
 function disableControls() {
@@ -212,10 +238,13 @@ function resetGame() {
     document.getElementById('score').innerText = score;
     ship.x = shipX;
     ship.y = shipY;
-    alienVelocityX = alienInitialVelocityX;  
+    alienVelocityX = alienInitialVelocityX;
     bulletArray = [];
     createAliens();
     attachControls();
+    elapsedTime = 0;
+    startTime = Date.now();
+    timerElement.innerText = "0.00 segundos";
     context.clearRect(0, 0, boardWidth, boardHeight);
     update();
 }
