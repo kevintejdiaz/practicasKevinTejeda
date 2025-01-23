@@ -1,39 +1,25 @@
+@charset "UTF-8";
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  margin: 0;
   overflow: hidden;
   font-family: "Arial", sans-serif;
-  background-color: rgb(255, 255, 255); 
-}
-
-#game-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0;
 }
 
 #score-panel {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: rgb(0, 0, 0);
-  font-size: 24px;
-  z-index: 11;
+  background-color: black;
+  color: white;
 }
 
-#restartButton {
-  display: none;
+#score-panel button {
+  padding: 8px;
 }
 
 #board {
   background-color: black;
+  width: 100vw;
+  height: 100vh; /* Altura inicial basada en el viewport */
+  max-height: 91vh; /* Limita el tamaño a un máximo del 90% del alto del viewport */
   display: block;
-  margin: 0 auto;
 }
 
 #overlay {
@@ -62,7 +48,6 @@ h1 {
 }
 
 #botonJugar {
-  margin-top: 15%;
   padding: 10px 40px;
   font-size: 24px;
   color: white;
@@ -93,3 +78,8 @@ h1 {
     font-size: 20px;
   }
 }
+@media (min-width: 1025px) {
+  #botonJugar {
+    margin-bottom: 15%;
+  }
+}/*# sourceMappingURL=style.css.map */

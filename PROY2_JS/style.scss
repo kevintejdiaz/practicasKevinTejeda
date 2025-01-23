@@ -20,7 +20,7 @@ $font-family: 'Arial', sans-serif;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  
+
   &:hover {
     background-color: $hover-color;
   }
@@ -32,11 +32,23 @@ body {
   font-family: $font-family;
   margin: 0;
 }
+#score-panel{
+  background-color: black;
+  color: white;
+}
 
+#score-panel button{
+  padding: 8px;
+}
 // Estilos para el canvas
 #board {
-  background-color: $background-color;
+  background-color: black;
+  width: 100vw;
+  height: 100vh; /* Altura inicial basada en el viewport */
+  max-height: 91vh; /* Limita el tamaño a un máximo del 90% del alto del viewport */
+  display: block;
 }
+
 
 // Overlay que cubre toda la pantalla
 #overlay {
@@ -65,7 +77,10 @@ h1 {
 
 // Estilos para el botón Jugar
 #botonJugar {
+<<<<<<< HEAD
+=======
   // margin-top: 13%;
+>>>>>>> ca221480c905c112893d42578f0e64bd140ac7cc
   @include button-styles($primary-color, limegreen);
 }
 
@@ -89,5 +104,12 @@ h1 {
 
   #botonJugar {
     font-size: 20px;
+  }
+}
+
+// Estilos para pantallas grandes
+@media (min-width: 1025px) {
+  #botonJugar {
+    margin-bottom: 15%;
   }
 }
