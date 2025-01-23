@@ -31,10 +31,12 @@ body {
   overflow: hidden;
   font-family: $font-family;
   margin: 0;
+  background-color: black;
 }
 #score-panel{
   background-color: black;
   color: white;
+  margin-left: 45%;
 }
 
 #score-panel button{
@@ -77,10 +79,7 @@ h1 {
 
 // Estilos para el botón Jugar
 #botonJugar {
-<<<<<<< HEAD
-=======
   // margin-top: 13%;
->>>>>>> ca221480c905c112893d42578f0e64bd140ac7cc
   @include button-styles($primary-color, limegreen);
 }
 
