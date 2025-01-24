@@ -1,0 +1,17 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.png {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
