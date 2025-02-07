@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #e0e0e0;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: silver;
+    width: 190px;
+    height: 320px;
+    border-radius: 20px;
+    border: 3px solid #ccc;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+}
+
+.pantalla {
+    width: 130px;
+    height: 90px;
+    background: black;
+    border-radius: 5px;
+}
+
+.menu {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-btn {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.play-btn {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.adelante-btn {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.atras-btn {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.central-btn {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
