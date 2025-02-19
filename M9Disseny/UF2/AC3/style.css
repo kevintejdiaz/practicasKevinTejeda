@@ -1,0 +1,64 @@
+.burrito { 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+}
+
+#header {
+    display: flex;
+    height: 175px;
+    width: auto;
+    margin-top: 1vw;
+    gap: 10px;
+    
+}
+
+.dni {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 260px;
+    background-color: #883A19;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    height: 100%;
+    flex-grow: 1;
+    background-color: #BE5F1B;
+    overflow-y: auto;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    height: 100px;
+    background-color: #883A19;
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto dentro esté centrado */
+    padding: 10px; /* Evita que el texto quede pegado a los bordes */
+}
+
+
+
+body {
+    background-color: #DF9065;
+    font-family: 'Inter', sans-serif;
+}
+
+
+a:hover img,
+a:hover svg {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
