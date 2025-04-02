@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AC6-Final/1.0.0": {
+        "runtime": {
+          "AC6-Final.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AC6-Final/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

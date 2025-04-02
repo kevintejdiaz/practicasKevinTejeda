@@ -1,0 +1,15 @@
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\bin\Debug\net8.0\AC6-Final.exe
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\bin\Debug\net8.0\AC6-Final.deps.json
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\bin\Debug\net8.0\AC6-Final.runtimeconfig.json
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\bin\Debug\net8.0\AC6-Final.dll
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\bin\Debug\net8.0\AC6-Final.pdb
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\AC6-Final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\AC6-Final.AssemblyInfoInputs.cache
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\AC6-Final.AssemblyInfo.cs
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\AC6-Final.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\AC6-Final.sourcelink.json
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\AC6-Final.dll
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\refint\AC6-Final.dll
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\AC6-Final.pdb
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\AC6-Final.genruntimeconfig.cache
+C:\Users\kevin\Desktop\DAW\2\M3.Programacio\UF5\AC6-Final\obj\Debug\net8.0\ref\AC6-Final.dll
